@@ -1,0 +1,106 @@
+meta(charset="UTF-8")
+meta(name="viewport", content="width=device-width,initial-scale=1")
+title Student Details
+link(rel="stylesheet", type="text/css", href="/css/style.css")
+link(rel="stylesheet", type="text/css", href="/bootstrap/css/bootstrap.min.css")
+nav.fixed-top
+  ul
+    li
+      a(href="/logout") Logout
+.cont
+    .header 
+      h3 Student Details Entry Form
+    .container
+      .head
+        p Not all fields marked a red star are (
+         span *
+         |) are required
+      if status2
+        .alert.alert-danger.notify
+          strong Failed!
+          |  #{status2}
+      .content
+        form(name="AddStudent" action="/RegStudent" method="POST" enctype="multipart/form-data" onsubmit="return validate()" autocomplete="off")
+          .form-row
+            .form-group.col-md-6
+              label(for="inputSurname") Sur name 
+              span *
+              input.form-control(type="text" name="surname" placeholder="Enter your sur Name here")
+              #name.error
+            .form-group.col-md-6
+              label(for="inputgivenName") Given name 
+              span *
+              input.form-control(type="text" name="givenName" placeholder="Enter your Given Name here")
+              #gName.error
+          .form-group
+            fieldset
+              legend Gender 
+                span *
+                .form-group.col-md-6
+                  .form-check.custom-control-inline
+                    input.form-check-input(type="radio" name="gender" value='Male') 
+                    label.form-check-label Male
+                  .form-check.custom-control-inline
+                    input.form-check-input(type="radio" name="gender" value='Female') 
+                    label.form-check-label Female
+              #gen.error
+          .form-row
+            .form-group.col-md-6
+              label(for="inputdob") Data of Birth 
+              span *
+              input.form-control(type="date" name="dob")
+              #DOB.error
+            .form-group.col-md-6
+              label(for="inputcountry") Country 
+              span *
+              select.form-control(name="country", type="text")
+                option(value="Default" selected) -------Select Country-------
+                option Uganda
+                option Rwanda
+                option Kenya
+                option Tanzania
+                option Burundi
+              #Country.error
+          .form-row
+            .form-group.col-md-6
+              label(for="inputoresidence") Place of Residence 
+              span *
+              input.form-control(type="text" name="residence" placeholder="Enter your Current place of residence")
+              #Presidence.error
+            .form-group.col-md-6
+              label(for="inputPhone") Phone Number 
+              span *
+              input.form-control(type="text" name="phone" placeholder="Eg. 07xxxxxxxx or +2567xxxxxxxx" )
+              #tel.error
+          .form-row
+            .form-group.col-md-12
+              label(for="inputemail") Email Address 
+              span *
+              input.form-control(type="text" name="email" placeholder="E.g. applicant@gmail.com")
+              #Email.error
+          .form-row
+            .form-group.col-md-6
+              label(for="inputSkills") Skills 
+              strong (Seperate Skills with commas) 
+              span *
+              textarea.form-control(type="text" name="skills" row="3")
+              #Skills.error
+            .form-group.col-md-6
+              label(for="inputprojects") Projects 
+              strong (Seperate Projects with commas) 
+              span *
+              textarea.form-control(type="text" name="projects" row="3")
+              #Project.error
+          .form-row
+            .form-group
+              label(for="UploadProfPic") Upload Profile Pic (PNG, Jpg, Jpeg) 
+              span *
+              input.form-control-file(type="file", name="ProfilePic")
+              #imge.error
+          button.btn2(type="reset") Cancel
+          button.btn1(type="submit") Submit
+          br
+
+script(src="js/Validation.js")
+script(src="bootstrap/jquery/jquery.min.js")
+script(src="bootstrap/js/bootstrap.bundle.min.js")

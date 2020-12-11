@@ -1,0 +1,24 @@
+meta(charset="UTF-8")
+meta(name="viewport", content="width=device-width,initial-scale=1")
+title Login
+link(rel="stylesheet", type="text/css", href="/css/style.css")
+link(rel="stylesheet", type="text/css", href="/css/login.css")
+link(rel="stylesheet", type="text/css", href="/bootstrap/css/bootstrap.min.css")
+.login
+    .loginHeader 
+      h3 Welcome
+      .container
+        .loginContent
+            form(action="/login" method="POST" autocomplete="off")
+                br
+                .form-row
+                    label(for="inputusername") Username 
+                    input.form-control(type="text" name="username")
+                .form-row
+                    label(for="inputgpassword") Password 
+                    input.form-control(type="password" name="password")
+                hr    
+                button.loginBtn(type="submit") Login
+
+script(src="bootstrap/jquery/jquery.min.js")
+script(src="bootstrap/js/bootstrap.bundle.min.js")

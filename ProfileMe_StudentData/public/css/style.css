@@ -1,0 +1,471 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: url("/images/bg2.png") no-repeat;
+    background-size: cover;
+
+}
+/**Nav Bar**/
+nav{
+    background:  #fbfaf1;
+    line-height: 20px;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0 0 30px #00000077;
+}
+
+.fixed-top {
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+}
+
+nav ul{
+    float:right;
+    list-style: none;
+    margin-right: 20px;
+}
+
+nav ul li{
+    line-height: 25px;
+    margin: 0 10px;
+    margin-top: 10px;
+
+}
+
+nav ul li a{
+    color: #430257;
+    font-size: 15px;
+    padding: 6px 10px;
+    font-weight: 500;
+}
+
+nav ul li a:hover{
+    color: #ab00df;
+    text-decoration: none;
+    transition: -0.5s;
+}
+/**Access page container**/
+.cont {
+    width: 690px;
+    height: auto;
+    position: absolute;
+	top:60px;
+	left: 0;
+	right: 0;
+	margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 30px #00000077;
+    background: #fff;
+}
+
+.content{
+    width: 650px;
+    margin: auto;
+    height: auto;
+    padding: 0px 15px 0px 15px;
+}
+
+.content strong{
+    font-size: 12px;
+    font-weight: lighter;
+    color: grey;
+}
+
+.head {
+    text-align: left;
+    color: #430257;
+    padding-left: 15px;
+    line-height: 30px;
+}
+
+.header{
+    width: 690px;
+    height: 60px;
+    background-color: #430257;
+}
+.header h3{
+   line-height: 40px;
+   font-weight: bolder;
+   font-size: 30px;
+   color: #fff;
+   padding-top: 10px;
+   padding-left: 20px;
+}
+
+label{
+    color: #430257;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+fieldset legend{
+    color: #430257;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+fieldset label{
+    color: #430257;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+
+::placeholder{
+    font-size: 13px;
+}
+select{
+    font-size: 10px;
+}
+
+.btn1{
+    float: right;
+    background-color: #430257;
+    border: 2px solid #430257;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+    margin-right: 30px;
+    padding: 0px 25px 0px 25px;
+}
+.btn1:hover{
+    background-color: #ab00df;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 2px solid #ab00df;
+    padding: 0px 25px 0px 25px;
+    text-decoration: none;
+}
+
+.btn2{
+    float: right;
+    background-color: #fff;
+    border: 2px solid #430257;
+    color: #430257;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-right: 10px;
+    padding: 0px 25px 0px 25px;
+}
+.btn2:hover{
+    background-color: #ab00df;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 2px solid #ab00df;
+    padding: 0px 25px 0px 25px;
+    text-decoration: none;
+}
+
+.notify{
+    width: auto;
+    height: 35px;
+    font-size: 14px;
+}
+
+.error{
+    color: red;
+}
+
+span{
+    color: red;
+}
+
+/**Selection_Page**/
+.content2{
+    width: 650px;
+    margin: auto;
+    height: auto;
+    padding: 0px 15px 0px 15px;
+}
+
+
+.cont2 {
+    width: 690px;
+    height: 250px;
+    position: absolute;
+	top:0px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 30px #00000077;
+    background: #fff;
+
+}
+.btn3{
+    background-color: #430257;
+    float: right;
+    color: #fff;
+    font-weight: bold;
+    margin-right: 140px;
+    border-radius: 5px;
+    padding: 10px 30px 10px 30px;
+}
+
+.btn3:hover{
+    background-color: #ab00df;
+    float: right;
+    color: #fff;
+    font-weight: bold;
+    margin-right: 140px;
+    border-radius: 5px;
+    padding: 10px 30px 10px 30px;
+    text-decoration: none;
+}
+/**Students_Page**/
+.content3{
+    width: 630px;
+    margin: auto;
+    height: auto;
+    padding: 0px 15px 0px 15px;
+}
+.header2{
+    width: 690px;
+    height: 60px;
+    background-color: #430257;
+}
+.header2 h3{
+    line-height: 40px;
+    font-weight: bolder;
+    font-size: 30px;
+    color: #fff;
+    padding-top: 10px;
+    padding-left: 20px;
+ }
+.cont3 {
+    width: 690px;
+    height: 100%;
+    position: absolute;
+	top:60px;
+	left: 0;
+	right: 0;
+	margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 30px #00000077;
+    background: #fff;
+
+}
+.btn4{
+    background-color: #430257;
+    float: right;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 10px 30px 10px 30px;
+}
+.btn4:hover{
+    background-color: #ab00df;
+    float: right;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 10px 30px 10px 30px;
+    text-decoration: none;
+}
+.table-con{
+    padding-top: 15px;
+}
+
+.tcontainer{
+    padding-top: 70px;
+}
+
+.tb-body{
+    overflow-x:scroll;
+    display:block;
+    font-size: 14px;
+}
+/*****Profile******/
+.form-row h2{
+    font-weight: bold;
+    float: left;
+    font-size: 25px;
+    font-family: Helvetica, sans-serif;
+}
+.pic{
+    font-weight: bold;
+    float: right;
+    font-size: 10px;
+    padding-top: 180px;
+    margin-left: 270px;
+    color: #430257;
+    position: absolute;
+}
+.pI{
+    float: right;
+    text-align: right;
+    font-size: 18px;
+    color:rgb(77, 76, 76);
+}
+
+.pPic{
+    float: right;
+    margin-left: 220px;
+    position: absolute;
+   
+}
+
+.left{
+    float: left;
+    padding-left: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    color:rgb(77, 76, 76);
+}
+
+.right{
+    float:right;
+    padding-left: 230px;
+    line-height: 40px;
+    font-size: 18px;
+    color: rgb(77, 76, 76);
+}
+
+/***ViewProfile***/
+.cont4 {
+    width: 690px;
+    height: 850px;
+    position: absolute;
+	top:330px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 30px #00000077;
+    background: #fff;
+
+}
+
+.content5{
+    width: 650px;
+    height: 850px;
+    margin: auto;
+    padding: 0px 15px 0px 15px;
+}
+
+.data{
+    float: right;
+    position: absolute;
+    color: rgb(136, 133, 133);
+    font-weight: lighter;
+    padding-left: 10px;
+}
+/***login***/
+.login {
+    width: 320px;
+    height: 300px;
+    position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 30px #00000077;
+    background: #fff;
+
+}
+
+.loginHeader{
+    width: 320px;
+    height: 60px;
+    background-color: #430257;
+}
+
+.loginHeader h3{
+    line-height: 40px;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 30px;
+    color: #fff;
+    padding-top: 10px;
+    padding-left: 20px;
+ }
+
+.loginContent{
+    width: 280px;
+    margin: auto;
+    height: auto;
+    padding: 0px 15px 0px 15px;
+}
+.loginBtn{
+    background-color: #430257;
+    border: 2px solid #430257;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+    margin-right: 30px;
+    padding: 0px 100px 0px 100px;
+}
+.loginBtn:hover{
+    background-color: #ab00df;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 2px solid #ab00df;
+    padding: 0px 100px 0px 100px;
+    text-decoration: none;
+}
+
+/**selection1**/
+.cont5 {
+    width: 400px;
+    height: 180px;
+    position: absolute;
+	top:0px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 30px #00000077;
+    background: #fff;
+}
+
+.content5{
+    width: 400px;
+    margin: auto;
+    height: auto;
+    padding: 0px 15px 0px 15px;
+}
+.btn4{
+    background-color: #430257;
+    float: right;
+    color: #fff;
+    font-weight: bold;
+    margin-right: 45px;
+    border-radius: 5px;
+    padding: 10px 20px 10px 20px;
+}
+
+.btn4:hover{
+    background-color: #ab00df;
+    float: right;
+    color: #fff;
+    font-weight: bold;
+    margin-right: 45px;
+    border-radius: 5px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+
+.header4{
+    width: 400px;
+    height: 60px;
+    background-color: #430257;
+}
+.header4 h3{
+   line-height: 40px;
+   text-align: center;
+   font-weight: bolder;
+   font-size: 30px;
+   color: #fff;
+   padding-top: 10px;
+   padding-left: 20px;
+}

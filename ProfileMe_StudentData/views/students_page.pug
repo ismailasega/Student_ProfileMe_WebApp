@@ -1,0 +1,57 @@
+meta(charset="UTF-8")
+meta(name="viewport", content="width=device-width,initial-scale=1")
+title Student Details
+link(rel="stylesheet", type="text/css", href="/css/style.css")
+link(rel="stylesheet", type="text/css", href="/bootstrap/css/bootstrap.min.css")
+link(rel="stylesheet", type="text/css", href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.min.css")
+nav.fixed-top
+  ul
+    li
+      a(href="/logout") Logout
+.cont3
+    .header2 
+      h3 Students
+      .container
+        .head
+          p All registered students
+        .content3
+          a.btn4(href='/StudentData') Add Student
+          .table-con
+              .tcontainer
+                table#StudentTable.tb-body.table.table-striped.table-bordered(style="width:96%")
+                    thead
+                    tr
+                        th(scope="col") Full Names
+                        th(scope="col") Gender
+                        th(scope="col") Date Of Birth
+                        th(scope="col") Phone Number
+                        th(scope="col") Full Profile
+                        th(scope="col") Action
+                        
+                    tbody
+                    if students.length
+                    each student in students
+                        tr
+                            td #{student.surname +' '+ student.givenName}
+                            td #{student.gender}
+                            td #{student.dob}
+                            td #{student.phone}
+                            td
+                              a(href='/viewProfile/'+student._id) viewProfile
+                            td
+                              form(method="post" action='/deleteStudent')
+                                  input(type="hidden", name="id", value=student._id)
+                                  button.btn-danger(type="submit") Delete
+
+    
+script(src="js/Validation.js")
+script(src="bootstrap/jquery/jquery.min.js")
+script(src="bootstrap/js/bootstrap.bundle.min.js")
+script(src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js")
+script(src="https://cdn.datatables.net/1.10.22/js/dataTables.bootstrap4.min.js")
+script(src="https://cdn.datatables.net/scroller/2.0.3/js/dataTables.scroller.min.js")
+script.
+  
+  $(document).ready( function () {
+    $('#StudentTable').DataTable();
+    });
