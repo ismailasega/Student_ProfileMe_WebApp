@@ -85,7 +85,7 @@ router.post('/RegStudent', upload, async(req, res)=>{
     }
 });
 
-//Retriving details from ufarmDB
+//Retriving  student details from DB
 router.get('/Students', async(req, res)=>{
     if(req.session.user){
         try{
