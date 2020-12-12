@@ -111,6 +111,7 @@ fieldset label{
     color: #430257;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 13px;
+    margin-right: 60px;
 }
 
 ::placeholder{
