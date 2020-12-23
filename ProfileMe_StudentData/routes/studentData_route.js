@@ -51,21 +51,17 @@ router.get('/selectOption', (req, res)=>{
 
 //Creating user credentials
 router.post('/user', async(req,res)=>{
-    if(req.session.user){
-        try{
-            const user = new User(req.body);
-            await User.register(user, req.body.password, (err)=>{
-                if (err){
-                    throw err
-                }
-                res.redirect('/login')
-            })
-        }catch(err){
-            res.status(400).send("Failed to add user");
-        }
-    }else{
+    try{
+        const user = new User(req.body);
+        await User.register(user, req.body.password, (err)=>{
+            if (err){
+                throw err
+            }
             res.redirect('/login')
-        }
+        })
+    }catch(err){
+        res.status(400).send("Failed to add user");
+    }
 });
   
 
